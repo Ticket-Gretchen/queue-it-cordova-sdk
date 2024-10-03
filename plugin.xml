@@ -18,7 +18,7 @@
         <param name="android-package" value="com.queueit.QueueIt"/>
       </feature>
     </config-file>
-    <framework src="com.queue-it.androidsdk:library-androidx:2.0.34"/>
+    <framework src="com.queue-it.androidsdk:library-androidx:2.1.7"/>
     <source-file src="src/android/QueueIt.java" target-dir="src/com/queueit" />
 
     <edit-config file="AndroidManifest.xml"
@@ -41,7 +41,7 @@
         <source url="https://github.com/CocoaPods/Specs.git"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="QueueITLibrary" spec="3.0.14" />
+        <pod name="QueueITLibrary" spec="3.4.3" />
       </pods>
     </podspec>
     <header-file src="src/ios/CPQueueIt.h" />
