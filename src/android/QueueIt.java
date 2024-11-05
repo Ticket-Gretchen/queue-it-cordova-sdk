@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Handler;
 
 import com.queue_it.androidsdk.Error;
+import com.queue_it.androidsdk.QueueDisabledInfo;
 import com.queue_it.androidsdk.QueueITEngine;
 import com.queue_it.androidsdk.QueueITException;
 import com.queue_it.androidsdk.QueueListener;
