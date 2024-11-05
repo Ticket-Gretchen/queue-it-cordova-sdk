@@ -8,7 +8,7 @@ import com.queue_it.androidsdk.QueueITEngine;
 import com.queue_it.androidsdk.QueueITException;
 import com.queue_it.androidsdk.QueueListener;
 import com.queue_it.androidsdk.QueuePassedInfo;
-import com.queue_it.androidsdk.QueueService;
+import com.queue_it.androidsdk.QueueITApiClient;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
@@ -87,7 +87,7 @@ public class QueueIt extends CordovaPlugin {
             }
 
             @Override
-            protected void onQueueDisabled() {
+            protected void onQueueDisabled(QueueDisabledInfo queueDisabledInfo) {
                 callbackContext.sendPluginResult(getRunResultObject(null, EnqueueResultState.Disabled));
             }
 
@@ -109,7 +109,7 @@ public class QueueIt extends CordovaPlugin {
         context.runOnUiThread(() -> {
             QueueITEngine engine = new QueueITEngine(context, customerId, eventOrAliasId, layoutName, language, listener);
             try {
-                engine.run(context, resetCache);
+                engine.run(context);
             } catch (QueueITException e) {
                 e.printStackTrace();
             }
