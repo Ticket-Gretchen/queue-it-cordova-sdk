@@ -57,7 +57,7 @@ public class QueueIt extends CordovaPlugin {
     }
 
     private boolean enableTesting(JSONArray data) throws JSONException {
-        QueueService.IsTest = data.getBoolean(0);
+        QueueITApiClient.IsTest = data.getBoolean(0);
         return true;
     }
 
