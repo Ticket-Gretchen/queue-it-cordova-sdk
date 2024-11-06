@@ -18,7 +18,7 @@ NSString * const EnqueueResult_toString[] = {
 - (void)enableTesting:(CDVInvokedUrlCommand*)command
 {
     BOOL value = [[command arguments] objectAtIndex:0];
-    [QueueService setTesting: value];
+    [QueueITApiClient setTesting: value];
 }
 
 - (void)runAsync:(CDVInvokedUrlCommand*)command

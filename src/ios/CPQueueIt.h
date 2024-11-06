@@ -1,7 +1,7 @@
 ﻿#import <Cordova/CDV.h>
 
 #import <QueueITLibrary/QueueITEngine.h>
-#import <QUeueITLibrary/QueueService.h>
+#import <QUeueITLibrary/QueueITApiClient.h>
 
 #define ENQUEUE_STATE(x) \
     (EnqueueState_toString[x])
